@@ -66,7 +66,7 @@ def handle_userinput(user_question):
 
 def main():
     load_dotenv()
-    st.set_page_config(page_title="Lupita",
+    st.set_page_config(page_title="Lupita PDF",
                        page_icon=":mag:")
     st.write(css, unsafe_allow_html=True)
 
@@ -75,7 +75,7 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = None
 
-    st.header("Lupita :mag:")
+    st.header("Lupita PDF :mag:")
     user_question = st.text_input("Pregunta sobre tus documentos:")
     if user_question:
         handle_userinput(user_question)
